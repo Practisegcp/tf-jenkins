@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "static" {
- name          = "kr_bucket"
+ name          = "krbucket"
  location      = "US"
  storage_class = "STANDARD"
 
