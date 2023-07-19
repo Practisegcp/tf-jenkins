@@ -1,4 +1,4 @@
-bucket_name = "my-bucket-tf"
+bucket_name = "kr-my-bucket"
 
 storage_class = "REGIONAL"
 
