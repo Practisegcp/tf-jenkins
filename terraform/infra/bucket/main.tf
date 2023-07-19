@@ -1,7 +1,9 @@
-module "bucket1" {
-    source = "../../modules/bucket"
+resource "google_storage_bucket" "default" {
 
+  name = var.bucket_name
 
-    name = "krbuck8"
-    
+  storage_class = var.storage_class
+
+  location = var.bucket_location
+
 }

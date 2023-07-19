@@ -1,11 +1,8 @@
-terraform {
-  required_version = ">=0.13.0"
+provider "google" {
 
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = ">= 3.50"
-    }
-    
-  }
+credentials = file("~/keys/SA_keys.json")
+
+project = var.project_id
+
+
 }
