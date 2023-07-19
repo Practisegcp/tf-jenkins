@@ -2,7 +2,7 @@ variable "bucket_name" {
 
   type = string
 
-  Description = "The name of our bucket"
+  description = "The name of our bucket"
 
 }
 
