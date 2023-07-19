@@ -2,6 +2,6 @@ module "bucket1" {
     source = "../../modules/bucket"
 
 
-    name = "krbuck5"
+    name = "krbuck6"
     
 }
