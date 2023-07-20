@@ -7,7 +7,7 @@ pipeline{
 
     stage('Git checkout'){
         steps{
-            git credentialsId: 'jenkins-cicd', url: 'https://github.com/Practisegcp/tf-jenkins.git'
+            git credentialsId: 'ala-cicd', url: 'https://github.com/Practisegcp/tf-jenkins.git'
         }
     }
         
