@@ -1,0 +1,33 @@
+pipeline{
+    agent any
+    tools {
+       terraform 'kr-tf'
+   }
+   stages{
+
+    stage('Git checkout'){
+        steps{
+            git credentialsId: 'jenkins-cicd', url: 'https://github.com/Practisegcp/tf-jenkins.git'
+        }
+    }
+        
+        stage('Terraform init'){
+            steps{
+                
+                sh 'terraform init'
+            }
+        }
+        
+        stage('Terraform plan'){
+            steps{
+                sh 'terraform plan'
+            }
+        }
+        
+        stage('Terraform apply'){
+            steps{
+                sh 'terraform apply --auto-approve'
+            }
+        }
+    }
+    }
