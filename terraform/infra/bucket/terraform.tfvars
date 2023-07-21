@@ -1,4 +1,4 @@
-bucket_name = "kr-my-bucket"
+bucket_name = "my-bucket"
 
 storage_class = "REGIONAL"
 
